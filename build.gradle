@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.websystique.springboot'
+version = '1.0.0'
+
+description = """SpringBootStandAloneExample"""
+
+sourceCompatibility = 10
+targetCompatibility = 10
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "https://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.4.3.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version:'1.4.3.RELEASE'
+}
