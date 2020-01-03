@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @EnableAutoConfiguration
 @ComponentScan("com.websystique.springboot")
+@EnableDiscoveryClient
 //@SpringBootApplication(scanBasePackages={"com.websystique.springboot"})// same as @Configuration @EnableAutoConfiguration @ComponentScan
 public class SpringBootStandAloneApp {
 
